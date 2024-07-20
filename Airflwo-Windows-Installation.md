@@ -1,9 +1,11 @@
 Windows subsystem for Linux
 
 Run this in windows search 
+
 Turn Windows features on or off
 
 Run this in command prompt 
+
 wsl --install
 
 
@@ -36,11 +38,14 @@ source airflow_venv/bin/activate
 
 ---
 Step 4: Install Apache Airflow with Constraints
+
 Set Airflow constraints:
 
 
 AIRFLOW_VERSION=2.6.2
+
 PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
+
 CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
 
 
@@ -75,9 +80,11 @@ source ~/airflow_project/airflow_venv/bin/activate
 airflow scheduler
 
 Accessing Airflow
+
  http://localhost:8085
 
 Additional Steps
+
 Set up the Airflow user (Optional):
 
 airflow users create \
