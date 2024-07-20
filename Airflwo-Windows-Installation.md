@@ -25,11 +25,13 @@ sudo pip3 install virtualenv
 Step 3: Create and Activate a Virtual Environment
 
 mkdir airflow_project
+
 cd airflow_project
 
 Create a virtual environment:
 
 virtualenv airflow_venv
+
 source airflow_venv/bin/activate
 
 ---
@@ -69,6 +71,7 @@ Start the web server:
 airflow webserver --port 8085
 
 source ~/airflow_project/airflow_venv/bin/activate
+
 airflow scheduler
 
 Accessing Airflow
