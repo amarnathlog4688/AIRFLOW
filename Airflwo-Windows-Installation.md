@@ -48,6 +48,9 @@ PYTHON_VERSION="$(python --version | cut -d " " -f 2 | cut -d "." -f 1-2)"
 
 CONSTRAINT_URL="https://raw.githubusercontent.com/apache/airflow/constraints-${AIRFLOW_VERSION}/constraints-${PYTHON_VERSION}.txt"
 
+NEW CONSTRAINT:
+pip install "apache-airflow[celery]==2.10.2" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.10.2/constraints-3.8.txt"
+
 
 Install Apache Airflow using constraints:
 
@@ -89,8 +92,10 @@ Set up the Airflow user (Optional):
 
 airflow users create \
     --username admin \
-    --firstname gowtham \
-    --lastname sb \
+    --firstname amar \
+    --lastname am \
     --role Admin \
-    --email test@admin.com   
+    --email amarnnathbblue@gmail.com   
+
+password: admin
 	
